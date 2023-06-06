@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Collections.Specialized;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class ControlSystam : MonoBehaviour
@@ -29,13 +31,26 @@ public class ControlSystam : MonoBehaviour
 	}
 
 	private void Move()
-		{
+	{
 		float h = Input.GetAxis("Horizontal");
 		float v = Input.GetAxis("Vertical");
 
 		rig.velocity = new Vector2(h, v) * moveSpeed;
 
 		ani.SetBool(parRun, h != 0 || v != 0);
+
+		print(Input.GetKeyDown(KeyCode.A));
+
+		if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+		{
+			print("玩家按下A");
+			transform.eulerAngles = new Vector3(0, 180, 0);
+		}
+		if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+		{
+			print("玩家按下D");
+			transform.eulerAngles = new Vector3(0, 0, 0);
+		}
 	}
 
 }
