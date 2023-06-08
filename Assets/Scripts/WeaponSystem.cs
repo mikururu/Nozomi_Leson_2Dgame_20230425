@@ -1,22 +1,26 @@
-using System.Runtime.InteropServices;
+ï»¿using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using UnityEngine;
 
 public class WeaponSystem : MonoBehaviour
 {
-	[Header("¥Í¦¨¶¡¹j"), Range(0, 10)]
+	[Header("ç”Ÿæˆé–“éš”"), Range(0, 10)]
 	public float interval = 3.5f;
+	[Header("æ­¦å™¨é ç½®ç‰©")]
+	public GameObject prefabWeapon;
+	[Header("æ­¦å™¨æ¨åŠ›")]
+	public Vector2 power;
 
-	[Header("¥Í¦¨ªZ¾¹¹w¸mª«")]
-	public GameObject prefabRock;
-
-	private void SpawnRock()
+	private void SpawnWeapon()
 	{
-		Instantiate(prefabRock, transform.position, transform.rotation);
+		GameObject tempWeapon = Instantiate(prefabWeapon, transform.position, transform.rotation);
+		Rigidbody2D rigWeapon = tempWeapon.GetComponent<Rigidbody2D>();
+
+		rigWeapon.AddForce(power);
 	}
 
 	private void Awake()
 	{
-		InvokeRepeating("SpawnRock", 0, interval);
+		InvokeRepeating("SpawnWeapon", 0, interval);
 	}
 }

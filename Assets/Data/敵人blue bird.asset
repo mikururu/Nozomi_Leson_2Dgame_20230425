@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35a28e6c48b3c74b93102f1319821f9, type: 3}
+  m_Name: "\u6575\u4EBAblue bird"
+  m_EditorClassIdentifier: 
+  hp: 850
+  attack: 239
+  moveSpeed: 6.8
+  expProbability: 0.135
+  prefabExp: {fileID: 2946950068956756193, guid: 07e13143341a42448910227cfc4dcd28, type: 3}
