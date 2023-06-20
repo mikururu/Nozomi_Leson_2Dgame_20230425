@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &59874790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,6 +471,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f2d270e4a22d244a9b4b004728647b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &282617751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282617744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649105b4ca170b342880e8f3ca60a5e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 563cc5eed47b4e846994d5b4e3df5de0, type: 2}
+  prefabDamage: {fileID: 7805920816769656155, guid: 126001557cab28b42a1dd0c663aed4bf, type: 3}
+--- !u!114 &282617752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282617744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f86dfc1166fd4fb45bd812df81fae2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 563cc5eed47b4e846994d5b4e3df5de0, type: 2}
 --- !u!1 &577909454
 GameObject:
   m_ObjectHideFlags: 1
@@ -731,7 +758,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 605e8e5a5d8f2804fab0b565198aa24b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12055,7 +12082,7 @@ GameObject:
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &787079472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12101,7 +12128,7 @@ GameObject:
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &853746800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12406,7 +12433,7 @@ GameObject:
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1133234718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13568,7 +13595,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 00fcafb6aa30bf346898a7c6faf4a770, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
