@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a35a28e6c48b3c74b93102f1319821f9, type: 3}
   m_Name: "\u6575\u4EBAblue bird"
   m_EditorClassIdentifier: 
-  hp: 850
+  hp: 1
   attack: 239
   moveSpeed: 6.8
-  expProbability: 0.135
-  prefabExp: {fileID: 2946950068956756193, guid: 07e13143341a42448910227cfc4dcd28, type: 3}
+  expProbability: 0.8
+  prefabExp: {fileID: 7853545653036854562, guid: 9a60dcfb53cc7f244aae344c6a06fdb2, type: 3}
