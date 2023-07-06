@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 2946950068956756198}
   - component: {fileID: 2946950068956756199}
   - component: {fileID: 2946950068956756192}
+  - component: {fileID: 282617745}
+  - component: {fileID: 282617751}
+  - component: {fileID: 282617752}
   m_Layer: 0
   m_Name: bluebird
   m_TagString: Untagged
@@ -144,3 +147,44 @@ CircleCollider2D:
   m_Offset: {x: 0.18, y: -0.02}
   serializedVersion: 2
   m_Radius: 0.8
+--- !u!114 &282617745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2946950068956756193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2d270e4a22d244a9b4b004728647b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 563cc5eed47b4e846994d5b4e3df5de0, type: 2}
+--- !u!114 &282617751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2946950068956756193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649105b4ca170b342880e8f3ca60a5e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 563cc5eed47b4e846994d5b4e3df5de0, type: 2}
+  prefabDamage: {fileID: 7805920816769656155, guid: 126001557cab28b42a1dd0c663aed4bf, type: 3}
+--- !u!114 &282617752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2946950068956756193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f86dfc1166fd4fb45bd812df81fae2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 563cc5eed47b4e846994d5b4e3df5de0, type: 2}
+  prefabDamage: {fileID: 7853545653036854562, guid: 9a60dcfb53cc7f244aae344c6a06fdb2, type: 3}
