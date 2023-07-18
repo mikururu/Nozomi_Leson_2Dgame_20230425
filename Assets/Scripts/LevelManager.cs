@@ -10,10 +10,20 @@ public class LevelManager : MonoBehaviour
 	public TextMeshProUGUI textLv;
 	[Header("文字經驗值")]
 	public TextMeshProUGUI textExp;
+	[Header("升級面板")]
+	public GameObject goLvUp;
 
 	private int lv = 1;
 	private float exp = 0;
-	public float[] expNeed = { 100, 200, 300, 400};
+	public float[] expNeeds = { 100, 200, 300, 400};
+
+	private void Start()
+	{
+		for (int i = 0; i < 10; i++)
+		{
+			print($"<color=#ff6699>i 的值 : {i}</color>");
+		}
+	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -25,16 +35,37 @@ public class LevelManager : MonoBehaviour
 		}
 	}
 
-	//private void Start()
-	//{
-	//	AddExp(50);
-	//}
-
 	public void AddExp(float exp)
 	{
 		this.exp += exp;
 
-		textExp.text = this.exp + " / 100";
-		imgExp.fillAmount = this.exp / 100;
+		if (this.exp > expNeeds[lv - 1])
+		{
+			this.exp -= expNeeds[lv - 1];
+			lv++;
+			textLv.text = lv.ToString();
+			LevelUp();
+		}
+
+		textExp.text = this.exp + " / " + expNeeds[lv - 1];
+		imgExp.fillAmount = this.exp / expNeeds[lv - 1];
+	}
+	
+	
+	private void LevelUp()
+	{
+		goLvUp.SetActive(true);
+		Time.timeScale = 0;
+	}
+
+	[ContextMenu("產生經驗值需求資料")]
+	private void ExpNedds()
+	{
+		expNeeds = new float[100];
+
+		for (int i = 0; i < 100; i++)
+		{
+			expNeeds[i] = (i + 1) * 100;
+		}
 	}
 }
