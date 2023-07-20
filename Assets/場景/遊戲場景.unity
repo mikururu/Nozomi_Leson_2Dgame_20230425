@@ -1132,7 +1132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb677493225c19418ca301b1f82080d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 7
   rig: {fileID: 604210634}
   ani: {fileID: 604210631}
   parRun: "\u958B\u95DC\u8D70\u8DEF"
@@ -1168,11 +1168,26 @@ MonoBehaviour:
   textLv: {fileID: 229036939}
   textExp: {fileID: 1908576369}
   goLvUp: {fileID: 1833208500}
+  goSkillUI:
+  - {fileID: 1784346255}
+  - {fileID: 1385987624}
+  - {fileID: 942303141}
+  dataSkills:
+  - {fileID: 11400000, guid: 021f63fa368bbbd4ab8ebc83c56ae6f5, type: 2}
+  - {fileID: 11400000, guid: a79cf2db61967df40afc78f986a9bf8c, type: 2}
+  - {fileID: 11400000, guid: e000b9d89eccf2e4b9db46f611b06418, type: 2}
+  - {fileID: 11400000, guid: 361a91b2f28d61140a492ac74daaafe7, type: 2}
+  - {fileID: 11400000, guid: c34b26b55a2d96d48a3cdc764d332b54, type: 2}
+  randomSkill: []
   expNeeds:
   - 100
   - 200
   - 300
   - 400
+  playerExpRange: {fileID: 604210638}
+  weaponSystemRock: {fileID: 878581625}
+  dataBasic: {fileID: 11400000, guid: fa74dd6d773f51c46b3cfd96a921c6a4, type: 2}
+  controlSystem: {fileID: 604210635}
 --- !u!58 &604210638
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13018,6 +13033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 3.5
+  attack: 50
   prefabWeapon: {fileID: 8848386007413740145, guid: d6f0395516d90e042b7999095f85ab6b, type: 3}
   power: {x: 200, y: 200}
 --- !u!4 &878581626
