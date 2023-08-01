@@ -132,7 +132,9 @@ public class LevelManager : MonoBehaviour
 
 	private void UpdateRockInterval()
 	{
-		
+		int lv = dataSkills[2].skillLv - 1;
+		weaponSystemRock.interval = dataSkills[2].skillValues[lv];
+		weaponSystemRock.Restart();
 	}
 
 	[Header("玩家資料")]

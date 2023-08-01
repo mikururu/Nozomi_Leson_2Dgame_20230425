@@ -8,14 +8,16 @@ public class DamageBasic : MonoBehaviour
 	[Header("傷害值欲=預置物")]
 	public GameObject prefabDamage;
 
-	private float hp;
+	protected float hp;
+	protected float hpMax;
 
 	private void Awake()
 	{
 		hp = data.hp;
+		hpMax = hp;
 	}
 
-	public void Damage(float damage)
+	public virtual void Damage(float damage)
 	{
 		hp -= damage;
 
