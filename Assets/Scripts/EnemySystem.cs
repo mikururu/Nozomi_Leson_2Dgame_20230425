@@ -8,6 +8,7 @@ public class EnemySystem : MonoBehaviour
 	
 	private Transform player;
 	private float timer;
+	private DamagePlayer damagePlayer;
 
 	private void OnDrawGizmos()
 	{
@@ -19,6 +20,7 @@ public class EnemySystem : MonoBehaviour
 	private void Awake()
 	{
 		player = GameObject.Find("爆走企鵝").transform;
+		damagePlayer = player.GetComponent<DamagePlayer>();
 	}
 	private void Update()
 	{
@@ -31,10 +33,19 @@ public class EnemySystem : MonoBehaviour
 		}
 		else
 		{
-			print("<color=#f96>進入攻擊範圍</color>");
+			//print("<color=#f96>進入攻擊範圍</color>");
 
 			timer += Time.deltaTime;
-			print($"<color=#9f4>計時器 : {timer}</color>");
+			//print($"<color=#9f4>計時器 : {timer}</color>");
+
+			if (timer >= data.attackInterval)
+			{
+				timer = 0;
+				damagePlayer.Damage(data.attack);
+			}
 		}
+
+		if (transform.position.x > player.position.x) transform.eulerAngles = new Vector3(0, 0, 0);
+		else transform.eulerAngles = new Vector3(0, 180, 0);
 	}
 }
