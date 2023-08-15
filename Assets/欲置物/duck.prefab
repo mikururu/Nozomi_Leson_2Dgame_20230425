@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3553612518190391869}
   - component: {fileID: 3553612518190391868}
   - component: {fileID: 3553612518190391871}
+  - component: {fileID: 8340394106809418182}
+  - component: {fileID: 3434441696353723522}
   m_Layer: 0
   m_Name: duck
   m_TagString: Untagged
@@ -144,3 +146,30 @@ CircleCollider2D:
   m_Offset: {x: -0.05, y: -0.26}
   serializedVersion: 2
   m_Radius: 0.9
+--- !u!114 &8340394106809418182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3553612518190391870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2d270e4a22d244a9b4b004728647b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 32bb38efb1262bb439c117aa0f066676, type: 2}
+--- !u!114 &3434441696353723522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3553612518190391870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649105b4ca170b342880e8f3ca60a5e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 32bb38efb1262bb439c117aa0f066676, type: 2}
+  prefabDamage: {fileID: 7805920816769656155, guid: 126001557cab28b42a1dd0c663aed4bf, type: 3}
