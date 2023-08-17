@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6d038e024c91744ae026c25ec2d4bf, type: 3}
-  m_Name: New Data Spawn Enemy
+  m_Name: "\u7B2C4\u6CE2\u602A\u7269bossduck"
   m_EditorClassIdentifier: 
-  timeToSpawn: 10
-  prefabEnemy: {fileID: 0}
-  intervalSpawn: 0
+  timeToSpawn: 20
+  prefabEnemy: {fileID: 4433684763573916877, guid: e69839640cff7224a820e903caa24309, type: 3}
+  intervalSpawn: 1

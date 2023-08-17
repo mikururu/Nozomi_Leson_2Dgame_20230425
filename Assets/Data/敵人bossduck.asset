@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35a28e6c48b3c74b93102f1319821f9, type: 3}
+  m_Name: "\u6575\u4EBAbossduck"
+  m_EditorClassIdentifier: 
+  hp: 800
+  attack: 800
+  moveSpeed: 10
+  expProbability: 1
+  prefabExp: {fileID: 7853545653036854562, guid: 9a60dcfb53cc7f244aae344c6a06fdb2, type: 3}
+  attackRange: 5
+  attackInterval: 1

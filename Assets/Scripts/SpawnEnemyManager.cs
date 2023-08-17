@@ -6,4 +6,41 @@ public class SpawnEnemyManager : MonoBehaviour
 	public SpawnSystem[] spawnSystems;
 	[Header("生成怪物資料")]
 	public DataSpawnEnemy[] dataSpawnEnemys;
+
+	private float timer;
+	private int index;
+
+	private void Update()
+	{
+		ChangeSpawnEnemy();
+	}
+
+	private void ChangeSpawnEnemy()
+	{
+		timer += Time.deltaTime;
+
+		if (index >= dataSpawnEnemys.Length) return;
+
+		if (index >= dataSpawnEnemys.Length -1 )
+		{
+			int random = Random.Range(0, spawnSystems.Length);
+			Vector3 pos = spawnSystems[random].transform.position;
+			Instantiate(dataSpawnEnemys[index].prefabEnemy, pos, Quaternion.identity);
+			index++;
+			return;
+		}
+
+		if (timer >= dataSpawnEnemys[index].timeToSpawn)
+		{
+			for (int i = 0; i < spawnSystems.Length; i++)
+			{
+				spawnSystems[i].prefabEnemy = dataSpawnEnemys[index].prefabEnemy;
+				spawnSystems[i].inverval = dataSpawnEnemys[index].intervalSpawn;
+				spawnSystems[i].Restart();
+			}
+
+			index++;
+			//print("生成的波數:" + index);
+		}
+	}
 }
