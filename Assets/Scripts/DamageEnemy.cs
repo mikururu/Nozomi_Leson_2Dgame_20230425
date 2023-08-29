@@ -25,13 +25,19 @@ public class DamageEnemy : DamageBasic
 		{
 			float damage = collision.gameObject.GetComponent<Weapon>().attack;
 			Damage(damage);
-			
+			AudioClip sound = SoundManager.instance.soundPlayerHurt;
+			SoundManager.instance.PlaySound(sound, 0.8f, 1.5f);
+
 		}
 	}
 
 	protected override void Dead()
 	{
 		base.Dead();
+
+		AudioClip sound = SoundManager.instance.soundEnemyDead;
+		SoundManager.instance.PlaySound(sound, 0.8f, 1.5f);
+
 		onDead.Invoke();
 		Destroy(gameObject);
 
